@@ -150,6 +150,16 @@ namespace OpenGLGameCS.Mathematics
             return new Vector3(v.X / a, v.Y / a, v.Z / a);
         }
 
+        public static Vector3 operator -(Vector3 v)
+        {
+            return new Vector3(-v.X, -v.Y, -v.Z);
+        }
+
         #endregion
+
+        public override string ToString()
+        {
+            return $"{X}  {Y}  {Z}";
+        }
     }
 }
